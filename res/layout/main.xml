@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+<TableLayout
+	android:id="@+id/tlMetrics"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:stretchColumns="1">
+	
+	<TableRow>
+	
+		<TextView
+			android:text="Service running"
+			android:id="@+id/textServiceOnOff"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_column="1"/>
+			
+		<ToggleButton
+			android:text="@+id/ToggleButton01"
+			android:id="@+id/btServiceOnOff"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+			
+	</TableRow>
+	
+
+	<TableRow>
+	
+ 		<TextView
+ 			android:text="Number of replicas"
+ 			android:id="@+id/TextView01"
+ 			android:layout_width="wrap_content"
+ 			android:layout_height="wrap_content"
+			android:layout_column="1"/>
+
+		<TextView
+			android:text="0"
+			android:id="@+id/textNumRepls"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+			
+	</TableRow>
+
+	<TableRow>
+	
+ 		<TextView
+ 			android:text="Number of sent messages"
+ 			android:id="@+id/TextView01"
+ 			android:layout_width="wrap_content"
+ 			android:layout_height="wrap_content"
+			android:layout_column="1"/>
+
+		<TextView
+			android:text="0"
+			android:id="@+id/textNumSentMsgs"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+			
+	</TableRow>
+
+</TableLayout>
+
+</LinearLayout>

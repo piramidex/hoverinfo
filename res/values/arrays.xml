@@ -1,0 +1,5 @@
+<resources><string-array name="storage_algorithms_values"><item>Broadcast-Based Algorithm (BBA)</item>
+<item>Random Silly Algorithm (RSA)</item>
+<item>Adaptive Attractor Point Algorithm (AAPA)</item>
+</string-array>
+</resources>

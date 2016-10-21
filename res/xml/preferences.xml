@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        
+<PreferenceCategory android:summary="Genral storage preferences" android:title="Storage" android:key="storage">
+<EditTextPreference android:title="Replication Frequency" android:summary="Frequency of checking for replication" android:key="replFreq"></EditTextPreference>
+<EditTextPreference android:title="Flooding Distance Threshold" android:summary="Distance threshold to reduce network overhead" android:key="floodDistThres"></EditTextPreference>
+<EditTextPreference android:title="Flooding Probability" android:summary="Probability of re-broadcastin to reduce network overhead" android:key="floodProb"></EditTextPreference>
+
+<ListPreference android:title="Storage Algorithm" android:summary="Storage algorithm to be used" android:key="@+id/storeAlgo" android:entryValues="@array/storage_algorithms_values" android:entries="@array/storage_algorithms_values"></ListPreference>
+
+</PreferenceCategory>
+<PreferenceCategory android:summary="General retrieval preferences" android:title="Retrieval" android:key="retrieval"></PreferenceCategory>
+<PreferenceCategory android:summary="Preferences for the the AAPA algorithm" android:title="Adaptive Attractor Point Algorithm (AAPA)" android:key="aapAlgo"><EditTextPreference android:title="Active Probability" android:summary="Probability of a replica to become active" android:key="activeProb"></EditTextPreference>
+<CheckBoxPreference android:title="Direction-Aware" android:key="dirAware" android:summary="Direction-aware switch"></CheckBoxPreference>
+</PreferenceCategory>
+</PreferenceScreen>
